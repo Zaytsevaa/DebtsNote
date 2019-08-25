@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="DebtsNoteTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="materialCardViewStyle">@style/MyCardViewStyle</item>
+    </style>
+
+    <!--Tabs Layouts-->
+
+    <style name="MyTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout.PrimarySurface">
+
+    </style>
+
+    <!--Cards styles-->
+
+    <style name="MyCardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">0dp</item>
+    </style>
+
+    <style name="MyTextAppearance.CardHeader" parent="TextAppearance.MaterialComponents.Subtitle1">
+
+    </style>
+
+    <style name="MyTextAppearance.CardBody" parent="TextAppearance.MaterialComponents.Body2">
+
+    </style>
+
+    <!--Input Layouts-->
+
+    <style name="MyTextInputLayoutStyle.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!--SubHeaders-->
+
+    <style name="MyTextAppearance.SubHeader" parent="TextAppearance.MaterialComponents.Caption">
+
+    </style>
+
+    <!--Other Themes-->
+
+    <style name="DebtsNoteTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DebtsNoteTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="DebtsNoteTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

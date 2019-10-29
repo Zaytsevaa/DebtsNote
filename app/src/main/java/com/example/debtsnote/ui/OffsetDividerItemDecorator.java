@@ -28,7 +28,7 @@ public class OffsetDividerItemDecorator extends DividerItemDecoration {
         super(context, orientation);
         final TypedArray a = context.obtainStyledAttributes(ATTRS);
         this.mDivider = a.getDrawable(0);
-        this.mOffset = convertDpToPixel(offset, context);
+        this.mOffset = (int) convertDpToPixel(offset, context);
         a.recycle();
     }
 
@@ -51,12 +51,11 @@ public class OffsetDividerItemDecorator extends DividerItemDecoration {
         c.restore();
     }
 
-    private static int convertDpToPixel(float dp, Context context) {
-        float px = TypedValue.applyDimension(
+    private static float convertDpToPixel(float dp, Context context) {
+        return TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP,
                 dp,
                 context.getResources().getDisplayMetrics()
         );
-        return (int) px;
     }
 }

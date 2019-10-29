@@ -8,6 +8,7 @@
     <com.example.debtsnote.ui.ContextMenuRecyclerView
         android:id="@+id/rvUserOperations"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
 </FrameLayout>

@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity
         mRecyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
-        DividerItemDecoration decorator = new OffsetDividerItemDecorator(MainActivity.this, layoutManager.getOrientation(), 72);
+        DividerItemDecoration decorator = new OffsetDividerItemDecorator(MainActivity.this, layoutManager.getOrientation(), 72f);
         mRecyclerView.addItemDecoration(decorator);
     }
 
